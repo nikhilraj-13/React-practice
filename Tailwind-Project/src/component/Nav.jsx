@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaArrowRightLong, FaBars, FaXmark } from 'react-icons/fa6'
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
 
@@ -19,9 +20,13 @@ export default function Nav() {
 
                 {/* Nav bar */}
                 <div className="hidden sm:flex items-center justify-between space-x-6 font-semibold">
-                    <a href="#home">Home</a>
+                    {/* <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#Career">Career</a>
+                    <a href="#Career">Career</a> */}
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/career">Career</Link>
+                    <Link to="/support">Support</Link>
                 </div>
 
                 {/* Button */}
